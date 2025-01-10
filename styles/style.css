@@ -40,6 +40,7 @@ main {
 
 a {
     text-decoration: none;
+
     color: var(--white-color);
 }
 
@@ -110,7 +111,7 @@ a {
     color: var(--text-primary);
 }
 
-#future-vision > p {
+#future-vision>p {
     color: var(--text-onfire);
     font-size: 14px;
     line-height: 25px;
@@ -128,7 +129,7 @@ a {
     background: var(--sky-color);
     padding: 30px;
     border-radius: 15px;
-    flex:1;
+    flex: 1;
 }
 
 .future-vision-content h3 {
@@ -153,4 +154,52 @@ a {
 
 .btn3 {
     background: var(--yellois-color);
+}
+
+/* News Start */
+#news {
+    border-radius: 24px;
+    margin-top: 40px;
+}
+#news h1 {
+    color: var(--text-primary);
+}
+#news > p {
+    color: var(--text-onfire);
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 30px 0;
+}
+.news-content {
+    display: flex;
+    gap: 30px;
+    background:var(--white-color);
+    padding: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.news-content > img {
+    border-radius: 20px;
+    max-width: 400px;
+}
+.news-time {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: var(--text-onfire);
+    font-weight: 500;
+    padding: 15px 0;
+}
+.news-text {
+    padding: 20px 0;
+}
+.news-text h2 {
+    padding-bottom: 15px;
+}
+.news-text > p {
+    color: var(--text-onfire);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
 }
