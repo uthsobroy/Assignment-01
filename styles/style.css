@@ -27,6 +27,8 @@ body {
     --sky-color: rgba(84, 144, 245, 0.2);
     --orange-color: rgb(247, 235, 207);
     --white-color: rgb(255, 255, 255);
+    --parrot-color: rgb(9, 161, 92);
+    --yellois-color: rgb(255, 194, 57);
 }
 
 /* Common Style */
@@ -43,11 +45,11 @@ a {
 
 .btn-primary {
     padding: 12px 20px;
-    background: var(--secondary-color);
     border-radius: 8px;
     font-weight: 600;
     margin-top: 20px;
     border: none;
+    background: var(--secondary-color);
 }
 
 
@@ -79,6 +81,7 @@ a {
     border-radius: 20px;
     margin-top: 40px;
 }
+
 .hero-container {
     display: flex;
     align-items: center;
@@ -86,10 +89,68 @@ a {
     gap: 50px;
     padding: 60px;
 }
+
 .hero-content h4 {
     color: var(--text-low-opacity);
 }
+
 .hero-content h1 {
     font-size: 40px;
     padding-top: 20px;
+}
+
+/* Future Vision start */
+#future-vision {
+    margin-top: 60px;
+}
+
+#future-vision h2 {
+    font-size: 36px;
+    padding-bottom: 20px;
+    color: var(--text-primary);
+}
+
+#future-vision > p {
+    color: var(--text-onfire);
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.future-vision-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.future-vision-content {
+    background: var(--sky-color);
+    padding: 30px;
+    border-radius: 15px;
+    flex:1;
+}
+
+.future-vision-content h3 {
+    color: var(--text-secondary);
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.future-vision-content p {
+    color: var(--text-onfire);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.btn1 {
+    background: var(--secondary-color);
+}
+
+.btn2 {
+    background: var(--parrot-color);
+}
+
+.btn3 {
+    background: var(--yellois-color);
 }
