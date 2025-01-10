@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Fira Sans", serif;
+    background: var(--bg-color);
+}
+
+/* root color */
+:root {
+
+    --bg-color: #F5F5F5;
+    --primary-color: rgb(198, 228, 214);
+    --secondary-color: rgb(0, 106, 80);
+
+    --text-primary: rgb(14, 14, 14);
+    --text-secondary: rgba(14, 14, 14, 0.8);
+    --text-onfire: rgba(14, 14, 14, 0.7);
+    --text-low-opacity: rgba(14, 14, 14, 0.5);
+
+    --sky-color: rgba(84, 144, 245, 0.2);
+    --orange-color: rgb(247, 235, 207);
+    --white-color: rgb(255, 255, 255);
+}
+
+/* Common Style */
+header,
+main {
+    margin: 20px auto;
+    max-width: 1280px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.btn-primary {
+    padding: 12px 20px;
+    background: var(--secondary-color);
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 20px;
+    border: none;
+}
+
+
+/* Header Start */
+/* nav */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu button {
+    padding: 10px 30px;
+}
+
+.nav-menu a {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav-menu h3 {
+    color: var(--secondary-color);
+}
+
+/* Hero */
+#hero {
+    background: var(--primary-color);
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
+}
+.hero-content h4 {
+    color: var(--text-low-opacity);
+}
+.hero-content h1 {
+    font-size: 40px;
+    padding-top: 20px;
+}
