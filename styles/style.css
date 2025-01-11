@@ -29,7 +29,8 @@ body {
     --orange-color: rgb(247, 235, 207);
     --white-color: rgb(255, 255, 255);
     --parrot-color: rgb(9, 161, 92);
-    --yellois-color: rgb(255, 194, 57);
+    --yellois-color: rgb(247, 235, 207);
+    --mango-color: rgb(255, 194, 57);
 }
 
 /* Common Style */
@@ -49,7 +50,7 @@ a {
     padding: 12px 20px;
     border-radius: 8px;
     font-weight: 600;
-    margin-top: 20px;
+    font-size: 18px;
     border: none;
     background: var(--secondary-color);
 }
@@ -92,13 +93,45 @@ a {
     padding: 60px;
 }
 
-.hero-content h4 {
+.hero-content h2 {
     color: var(--text-low-opacity);
 }
 
 .hero-content h1 {
-    font-size: 40px;
+    font-size: 60px;
     padding-top: 20px;
+}
+
+
+/* Pillar Sec. Start */
+#pillar h1{
+    font-size: 40px;
+    margin: 80px 0 40px 0;
+}
+
+.pillar-container{
+    display: flex;
+    gap: 30px;
+    
+}
+.pillar-box {
+    padding:30px;
+    background: var(--white-color);
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    border-radius: 20px;
+    flex: 1;
+}
+.pillar-box h2 {
+    color: var(--text-primary);
+    padding: 20px 0;
+    font-size: ;
+}
+.pillar-box p {
+    text-align: start;
+    line-height: 25px;
+    color: var(--text-onfire);
+    font-weight: 500;
+    letter-spacing:.3px;
 }
 
 /* Future Vision start */
@@ -107,17 +140,18 @@ a {
 }
 
 #future-vision h2 {
-    font-size: 36px;
+    font-size: 40px;
     padding-bottom: 20px;
     color: var(--text-primary);
 }
 
-#future-vision>p {
+#future-vision > p {
     color: var(--text-onfire);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
     font-weight: 500;
     padding-bottom: 30px;
+    text-align: start;
 }
 
 .future-vision-container {
@@ -127,34 +161,70 @@ a {
 }
 
 .future-vision-content {
-    background: var(--sky-color);
     padding: 30px;
     border-radius: 15px;
     flex: 1;
 }
+.content1 {
+    background: var(--sky-color);
+}
+.content2 {
+    background: var(--primary-color)
+}
+.content3 {
+    background: var(--yellois-color);
+}
 
 .future-vision-content h3 {
     color: var(--text-secondary);
-    font-size: 18px;
+    font-size: 20px;
     padding: 20px 0;
 }
 
 .future-vision-content p {
     color: var(--text-onfire);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
+    text-align: start;
 }
 
 .btn1 {
     background: var(--secondary-color);
+    margin-top: 20px;
 }
 
 .btn2 {
     background: var(--parrot-color);
+    margin-top: 45px;
 }
 
 .btn3 {
-    background: var(--yellois-color);
+    background: var(--mango-color);
+    margin-top: 20px;
+}
+
+/* Chief Section */
+#chief {
+    margin: 50px 0;
+}
+.chief-container{
+    background: var(--white-color);
+    padding: 50px 30px;
+    border-radius: 25px;
+    background-image: url(../assets/quote-bg.png);
+    background-repeat: no-repeat;
+    background-position: left 30px top 30px;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+}
+.chief-container h2 {
+    color: var(--text-secondary);
+}
+.chief-container > p {
+    text-align: start;
+    color: var(--text-secondary);
+    line-height: 25px;
+    padding: 10px 0;
+    font-weight: 500;
 }
 
 /* News Start */
@@ -164,6 +234,7 @@ a {
 }
 #news h1 {
     color: var(--text-primary);
+    font-size: 40px;
 }
 #news > p {
     color: var(--text-onfire);
@@ -171,6 +242,7 @@ a {
     font-size: 16px;
     font-weight: 500;
     padding: 30px 0;
+    text-align: start;
 }
 .news-content {
     display: flex;
@@ -197,12 +269,17 @@ a {
 }
 .news-text h2 {
     padding-bottom: 15px;
+    font-size: 32px;
 }
 .news-text > p {
     color: var(--text-onfire);
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
+    text-align: start;
+}
+.btn-news {
+    margin-top: 20px;
 }
 
 /* Donate Sec. Start */
@@ -248,9 +325,9 @@ a {
 
 .donate-container  input {
     display: block;
-    width: 95%;
+    width: 97%;
     margin: 40px auto;
-    padding: 30px;
+    padding: 25px;
     border: none;
     border-radius: 5px;
 }
@@ -263,5 +340,31 @@ a {
 .donate-btn {
     display: block;
     margin: 0 auto;
+    padding: 20px 30px;
 }
 
+/* Footer */
+footer {
+    margin-top: 80px ;
+    background: var(--white-color);
+    padding: 0 100px;
+}
+
+footer h1 {
+    color: var(--text-primary);
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.social-icon{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.social-icon img {
+    width: 30px;
+    max-width: 30px;
+}
