@@ -53,6 +53,16 @@ a {
     font-size: 18px;
     border: none;
     background: var(--secondary-color);
+    transition: .3s ease
+}
+
+.btn-primary:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.btn-primary:hover a {
+    color: black;
 }
 
 
@@ -76,6 +86,21 @@ a {
 
 .nav-menu h3 {
     color: var(--secondary-color);
+}
+
+.nav-btn {
+    border-radius: 7px;
+    border: 2px solid var(--secondary-color);
+    transition: .3s ease-in-out;
+}
+
+.nav-btn:hover {
+    background: orange;
+    border: 2px solid orange;
+}
+
+.nav-btn:hover a {
+    color: var(--white-color);
 }
 
 /* Hero */
@@ -237,6 +262,69 @@ a {
     padding: 10px 0;
 }
 
+
+/* Opinion Section */
+#opinion {
+    margin: 80px 0;
+}
+
+#opinion h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.opinion-container {
+    background: var(--white-color);
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.opinion-title {
+    background: var(--primary-color);
+}
+
+.opinion-title h3 {
+    padding-right: 30px;
+}
+
+.opinion-content,
+.opinion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    outline: 1px solid rgba(14, 14, 14, 0.15);
+}
+
+.opinion-content p {
+    font-weight: 600;
+}
+
+.opinion-btn {
+    padding: 15px 40px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    transition: .3s ease-in;
+}
+
+.opinion-btn:hover {
+    background: orange;
+}
+
+.opinion-btn a {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.opinion-btn i {
+    font-size: 30px;
+}
+
 /* News Start */
 #news {
     border-radius: 24px;
@@ -333,6 +421,7 @@ p {
     border: 1px solid rgba(14, 14, 14, 0.15);
     border-radius: 20px;
     font-weight: 700;
+    transition: .3s ease-in;
 }
 
 .donate-price h2 {
@@ -342,7 +431,14 @@ p {
     border: 1px solid rgba(14, 14, 14, 0.15);
     border-radius: 20px;
     font-weight: 700;
+    transition: .3s ease-in;
 }
+
+.donate-price h1:hover,
+.donate-price h2:hover {
+    background: orange;
+}
+
 
 .donate-container input {
     display: block;
@@ -366,38 +462,13 @@ p {
     padding: 20px 30px;
 }
 
-/* Footer */
-footer {
-    margin-top: 80px;
-    background: var(--white-color);
-    padding: 0 100px;
-}
-
-footer h1 {
-    color: var(--text-primary);
-    text-align: center;
-    padding: 50px 0;
-    font-size: 40px;
-}
-
-.social-icon {
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.social-icon img {
-    width: 30px;
-    max-width: 30px;
-}
 
 /* Subscribe Start */
 #cribe {
     background: var(--primary-color);
     margin: 80px 0;
     padding: 50px 0;
+    border-radius: 20px;
 }
 
 #cribe h1 {
@@ -424,7 +495,7 @@ footer h1 {
 }
 
 .cribe-fild input {
-    border:none;
+    border: none;
     padding: 30px 0 30px 30px;
     font-size: 18px;
     border-radius: 10px 0 0 10px;
@@ -440,10 +511,43 @@ footer h1 {
     border-radius: 0 10px 10px 0;
     cursor: pointer;
     width: 200px;
-    margin-left:-5px ;
+    margin-left: -5px;
 }
 
 .spam {
     padding: 30px 0;
     color: var(--text-onfire);
+}
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    background: var(--white-color);
+    padding: 0 100px;
+}
+
+footer h1 {
+    color: var(--text-primary);
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+footer hr {
+    width: 80%;
+    margin: 0 auto;
+    color: var(--very-low-opacity);
+}
+
+.social-icon {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-icon img {
+    width: 30px;
+    max-width: 30px;
 }
